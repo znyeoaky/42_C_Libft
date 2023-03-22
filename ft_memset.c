@@ -54,8 +54,8 @@ int main() {
 }
 
 /*
-The C library function void *memset(void *str, int c, size_t n) copies the character c (an unsigned char) to the first n characters of the string pointed to, by the argument str.
-The memset is a C library function that allows you to set a block of memory to a particular value. The name "memset" stands for "memory set".
+    The C library function void *memset(void *str, int c, size_t n) copies the character c (an unsigned char) to the first n characters of the string pointed to, by the argument str.
+    The memset is a C library function that allows you to set a block of memory to a particular value. The name "memset" stands for "memory set".
 
 Parameters
     #str − This is a pointer to the block of memory to fill.
@@ -64,27 +64,31 @@ Parameters
 
 Return Value
     This function returns a pointer to the memory area str.
-
 */
 
 /*
 NOTE:
 WHY "unsigned char *p = str;"
     Using pointer arithmetic with "*p++ = value;" can be more efficient than array indexing with str[i] in C. It also allows us to modify the pointer value without changing the original str pointer. However, for memset, either method should result in similar performance.
+
 WHY"2nd parameter is int"
     The second parameter of memset is usually a char value, but this implementation uses an int to allow it to work with values outside the range of a char. Passing an int sets every byte in the memory region to the value of the least significant byte of the int.
+
 ABT"test01"
     0x12345678 is a hexadecimal integer literal that represents the value 305419896 in decimal. In C, hexadecimal integer literals are written with a leading 0x followed by the hexadecimal digits.
 
     %08X is a format specifier used with the printf function to print an integer value in hexadecimal format with leading zeros. The 0 in %08X specifies that leading zeros should be used to pad the output to 8 digits. The 8 in %08X specifies that the output should be 8 characters wide, and the X specifies that the output should be in uppercase hexadecimal format.
+
 ABT"test01" - WHY"1st byte is 0x78 not 0x12"
     The reason the first byte of value being used to fill the memory region is 0x78 instead of 0x12 is because of the endianness of the machine. Assuming a little-endian machine (where the least significant byte of an integer is stored at the lowest memory address), the byte order of the int value 0x12345678 would be:
     | 0x78 | 0x56 | 0x34 | 0x12 |
     So, when memset(dest, value, sizeof(dest)) is called, the value of 0x78 is used to fill the memory region, because it is the least significant byte of the int value. The other three bytes are not used for the memory fill operation.
+
 WHAT"The least significant byte"
     The least significant byte is the byte that holds the least significant (or least important) bits of an integer. In a little-endian machine, this byte is stored at the lowest memory address of the integer, while in a big-endian machine, it is stored at the highest memory address.
 
     For example, consider the int value 0x12345678. In a little-endian machine, the least significant byte is 0x78, which is stored at the lowest memory address. In a big-endian machine, the most significant byte would be stored at the lowest memory address, so the least significant byte would be 0x12.
+
 DIFF"big-endian and little-endian"
     Most modern processors, including those from Intel, AMD, ARM, and many others, use the little-endian byte ordering. This is because little-endian byte ordering simplifies certain operations, such as arithmetic operations and memory addressing.
 
