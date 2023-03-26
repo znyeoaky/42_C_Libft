@@ -1,3 +1,6 @@
+# executable files
+ft_memcpy
+
 # Prerequisites
 *.d
 
