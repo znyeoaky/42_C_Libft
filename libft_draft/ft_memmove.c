@@ -10,15 +10,15 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 		return (NULL);
 
 	if (pdst < psrc) {
-			// Destination comes before source in memory, can copy forwards
-			while (len--) 
-					*pdst++ = *psrc++;
+		// Destination comes before source in memory, can copy forwards
+		while (len--) 
+				*pdst++ = *psrc++;
 	} else {
-			// Destination comes after source in memory, must copy backwards
-			pdst += len - 1;
-			psrc += len - 1;
-			while (len--)
-					*pdst-- = *psrc--;
+		// Destination comes after source in memory, must copy backwards
+		pdst += len - 1;
+		psrc += len - 1;
+		while (len--)
+				*pdst-- = *psrc--;
 	}
 
 	return (dst);
