@@ -3,7 +3,7 @@ ft_bzero
 ft_memset
 ft_memcpy
 ft_memmove
-ft_memmchr
+ft_memchr
 
 # Prerequisites
 *.d
