@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Werror
 RM				= rm -f
 
 SRCS = ft_bzero.c ft_memchr.c ft_memcpy.c ft_memmove.c ft_memset.c 
-# SRCS = ft_strlen.c ft_substr.c ft_atoi.c ft_bzero.c
+# SRCS = ft_strlen.c ft_substr.c ft_atoi.c
 # SRCS =	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_split.c \
 					ft_strlcat.c ft_strncmp.c ft_substr.c  ft_isalpha.c \
 					ft_itoa.c   ft_putendl_fd.c ft_strchr.c  ft_strlcpy.c \
