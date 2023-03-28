@@ -1,4 +1,6 @@
-#include <stddef.h>
+#include "libft.h"
+
+// #include <stddef.h>
 
 void *ft_memset(void *str, int c, size_t n)
 {
@@ -25,8 +27,8 @@ void *memset(void *s, int c, size_t n) {
     return s;
 }
 */
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
 int main() {
     /*test00*/
@@ -54,6 +56,7 @@ int main() {
 }
 
 /*
+DESCRIPTION
     The C library function void *memset(void *str, int c, size_t n) copies the character c (an unsigned char) to the first n characters of the string pointed to, by the argument str.
     The memset is a C library function that allows you to set a block of memory to a particular value. The name "memset" stands for "memory set".
 
