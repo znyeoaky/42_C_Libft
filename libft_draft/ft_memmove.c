@@ -1,5 +1,7 @@
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
+
+// #include <stddef.h>
+// #include <stdio.h>
 
 void *ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -24,7 +26,7 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-#include <string.h>
+// #include <string.h>
 
 int main()
 {
@@ -60,6 +62,7 @@ int main()
 }
 
 /*
+DESCRIPTION
 	The memmove() function copies len bytes from string src to string dst.  
 	memmove() is similar to memcpy() as it also copies data from a source to destination. 
 	memcpy() leads to problems when source and destination addresses overlap as memcpy() simply copies data one by one from one location to another. 
