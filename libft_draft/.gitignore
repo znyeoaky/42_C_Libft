@@ -6,6 +6,7 @@ ft_memset
 ft_memcpy
 ft_memmove
 ft_memchr
+ft_memcmp
 
 # System file
 .DS_Store
