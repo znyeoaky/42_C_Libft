@@ -1,9 +1,14 @@
 # executable files
+main
+
 ft_bzero
 ft_memset
 ft_memcpy
 ft_memmove
 ft_memchr
+
+# System file
+.DS_Store
 
 # Prerequisites
 *.d
