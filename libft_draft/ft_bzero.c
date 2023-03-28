@@ -1,4 +1,6 @@
-#include <stddef.h>
+#include "libft.h"
+
+// #include <stddef.h>
 
 void ft_bzero(void *s, size_t n)
 {
@@ -6,13 +8,13 @@ void ft_bzero(void *s, size_t n)
 	if(n > 0) //?
 	{
 		while (n--) 
-				*p++ = 0;
+			*p++ = 0;
 	}
 }
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 
 int main() {
     // Example 1: Clearing a string using ft_bzero()
@@ -33,6 +35,7 @@ int main() {
 
 
 /*
+DESCRIPTION
 	bzero – write zeroes to a byte string
 	The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.	
 	If n is zero, bzero() does nothing.
