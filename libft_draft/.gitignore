@@ -1,5 +1,6 @@
 # executable files
 main
+tempCodeRunnerFile.c
 
 ft_bzero
 ft_memset
