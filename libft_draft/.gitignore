@@ -8,6 +8,7 @@ ft_memcpy
 ft_memmove
 ft_memchr
 ft_memcmp
+ft_strncmp
 
 # System file
 .DS_Store
