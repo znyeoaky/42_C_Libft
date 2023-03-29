@@ -1,3 +1,12 @@
+### gcc -L. -lft *.c ###
+### ./a.out ###
+
+// gcc: the command to invoke the GNU Compiler Collection, which is used to compile C code.
+// -L.: tells the linker to search for libraries in the current directory (represented by the .).
+// -lft: tells the linker to look for a library called libft.a. 
+//       (By convention, library names usually start with lib and end with .a for static libraries, or .so for shared libraries.)
+// *.c: file name
+
 ### What is size_t? When should I use size_t in C? ###
 
 // 1. The size_t data type in C is an unsigned integer type 
