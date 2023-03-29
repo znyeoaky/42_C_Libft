@@ -4,7 +4,6 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
     const char* str1 = s1;
     const char* str2 = s2;
-    char res;
 
     while(n){
         if(*str1 != *str2)
